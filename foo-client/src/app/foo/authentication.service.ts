@@ -17,7 +17,7 @@ export class AuthenticationService {
 		headers.append('Access-Control-Allow-Origin', '*');
 		headers.keys().forEach((v, i) => console.log(v, headers.get(v)));
 		return this.http.get<Principal>(
-			'http://localhost:8081/user',
+			'http://localhost:8080/user',
 			{ headers: headers }
 		);
 	}
